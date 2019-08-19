@@ -15,12 +15,12 @@ def get_japanese_emoticon(path, emoticon)
   
   emoticon_hash[:get_emoticon][emoticon] ? emoticon_hash[:get_emoticon][emoticon] : "Sorry, that emoticon was not found"
   
-  emoticon_hash.each do |get_types, info|
-    info.each do |english, japanese|
-     return japanese if english == emoticon 
-    end 
-  end
-  p  "Sorry, that emoticon was not found"
+  #emoticon_hash.each do |get_types, info|
+    #info.each do |english, japanese|
+     #return japanese if english == emoticon 
+    #end 
+  #end
+  #p  "Sorry, that emoticon was not found"
 end
 
 def get_english_meaning(path, emotion)
