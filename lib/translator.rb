@@ -12,6 +12,9 @@ end
 
 def get_japanese_emoticon(path, emoticon)
   emoticon_hash = load_library(path)
+  
+  emoticon_hash[:]
+  
   emoticon_hash.each do |get_types, info|
     info.each do |english, japanese|
      return japanese if english == emoticon 
